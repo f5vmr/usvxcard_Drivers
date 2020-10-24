@@ -49,7 +49,7 @@ for cmd in dtparam dtoverlay ; do
   fi
 done
 
-if [ ! -x seeed-voicecard -o ! -f seeed-voicecard.service ]; then
+if [ ! -x usvxcard_Drivers -o ! -f usvxcard_Drivers.service ]; then
   echo "Please run this script in the project directory"
   echo "which has files such as install.sh and seeed-voicecard.service"
   errorFound=1

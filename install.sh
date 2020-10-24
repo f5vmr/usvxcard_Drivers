@@ -273,7 +273,7 @@ function install_module {
 }
 
 echo -e "\n### Install sound card driver"
-install_module "./" "seeed-voicecard"
+install_module "./" "usvxcard_Drivers"
 
 # install dtbos
 echo -e "\n### Install device tree overlays"
@@ -330,8 +330,8 @@ git --git-dir=/etc/voicecard/.git --work-tree=/etc/voicecard/ add --all
 echo "git commit -m \"origin configures\""
 git --git-dir=/etc/voicecard/.git --work-tree=/etc/voicecard/ commit  -m "origin configures"
 
-echo -e "\n### Start service seeed-voicecard"
-echo -e "    see /var/log/seeed-voicecard.log for more service information"
+echo -e "\n### Start service usvxcard_Drivers"
+echo -e "    see /var/log/usvxcard_Drivers.log for more service information"
 cp usvxcard_Drivers /usr/bin/
 cp usvxcard_Drivers.service /lib/systemd/system/
 systemctl enable  usvxcard_Drivers.service 

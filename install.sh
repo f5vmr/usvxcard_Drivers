@@ -320,8 +320,8 @@ git_email=$(git config --global --get user.email)
 git_name=$(git config --global --get user.name)
 if [ "x${git_email}" == "x" ] || [ "x${git_name}" == "x" ] ; then
     echo "setup git config"
-    git config --global user.email "respeaker@seeed.cc"
-    git config --global user.name "respeaker"
+    git config --global user.email "f8asb@hotmail.fr"
+    git config --global user.name "f8asb"
 fi
 echo "git init"
 git --git-dir=/etc/voicecard/.git init
@@ -332,12 +332,12 @@ git --git-dir=/etc/voicecard/.git --work-tree=/etc/voicecard/ commit  -m "origin
 
 echo -e "\n### Start service seeed-voicecard"
 echo -e "    see /var/log/seeed-voicecard.log for more service information"
-cp seeed-voicecard /usr/bin/
-cp seeed-voicecard.service /lib/systemd/system/
-systemctl enable  seeed-voicecard.service 
-systemctl start   seeed-voicecard
+cp usvxcard_Drivers /usr/bin/
+cp usvxcard_Drivers.service /lib/systemd/system/
+systemctl enable  usvxcard_Drivers.service 
+systemctl start   usvxcard_Drivers
 
 echo "------------------------------------------------------"
 echo "Please reboot your device to apply all settings"
-echo "Enjoy!"
+echo "Enjoy! F8ASB.COM"
 echo "------------------------------------------------------"

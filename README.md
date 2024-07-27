@@ -3,7 +3,7 @@
 ### Install usvxcard
 Get the usvxcard source code. and install all linux kernel drivers
 ```bash
-git clone https://github.com/f8asb/usvxcard_Drivers
+git clone https://github.com/f5vmr/usvxcard_Drivers
 cd usvxcard_Drivers
 sudo ./install.sh
 sudo reboot

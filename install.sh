@@ -49,11 +49,11 @@ for cmd in dtparam dtoverlay ; do
   fi
 done
 
-if [ ! -x usvxcard_Drivers -o ! -f usvxcard_Drivers.service ]; then
-  echo "Please run this script in the project directory"
-  echo "which has files such as install.sh and seeed-voicecard.service"
-  errorFound=1
-fi
+#if [ ! -x usvxcard_Drivers -o ! -f usvxcard_Drivers.service ]; then
+#  echo "Please run this script in the project directory"
+#  echo "which has files such as install.sh and seeed-voicecard.service"
+#  errorFound=1
+#fi
 
 if [ $errorFound = 1 ] ; then
   echo "Errors found, exiting." 1>&2
